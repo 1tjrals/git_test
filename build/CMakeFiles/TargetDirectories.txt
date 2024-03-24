@@ -1,0 +1,4 @@
+/home/sung/ws/git/git_test/build/CMakeFiles/myproject.dir
+/home/sung/ws/git/git_test/build/CMakeFiles/edit_cache.dir
+/home/sung/ws/git/git_test/build/CMakeFiles/rebuild_cache.dir
+/home/sung/ws/git/git_test/build/CMakeFiles/myproject_autogen.dir
