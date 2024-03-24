@@ -36,6 +36,11 @@ public:
     QPushButton *pushButton_2;
     QComboBox *comboBox_1;
     QLabel *label_1;
+    QPushButton *pushButton_4;
+    QPushButton *pushButton_3;
+    QLabel *label_2;
+    QLabel *label_3;
+    QPushButton *pushButton_5;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -77,6 +82,21 @@ public:
         label_1 = new QLabel(frame_2);
         label_1->setObjectName(QString::fromUtf8("label_1"));
         label_1->setGeometry(QRect(20, 70, 91, 31));
+        pushButton_4 = new QPushButton(centralwidget);
+        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
+        pushButton_4->setGeometry(QRect(340, 260, 89, 25));
+        pushButton_3 = new QPushButton(centralwidget);
+        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+        pushButton_3->setGeometry(QRect(340, 230, 89, 25));
+        label_2 = new QLabel(centralwidget);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setGeometry(QRect(350, 300, 67, 17));
+        label_3 = new QLabel(centralwidget);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setGeometry(QRect(190, 390, 67, 17));
+        pushButton_5 = new QPushButton(centralwidget);
+        pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
+        pushButton_5->setGeometry(QRect(180, 360, 89, 25));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -97,6 +117,11 @@ public:
         pushButton_1->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
         pushButton_2->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
         label_1->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("MainWindow", "stop", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("MainWindow", "start", nullptr));
+        label_2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        label_3->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        pushButton_5->setText(QCoreApplication::translate("MainWindow", "Timer", nullptr));
     } // retranslateUi
 
 };

@@ -83,6 +83,12 @@
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
+		],
+		[
+			"/home/sung/ws/git/git_test/mythread.h",
+			"MU",
+			"EWIEGA46WW/moc_mythread.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -139,7 +145,8 @@
 	[
 		[ "/home/sung/ws/git/git_test/Adder.cpp", "MU", null ],
 		[ "/home/sung/ws/git/git_test/main.cpp", "MU", null ],
-		[ "/home/sung/ws/git/git_test/mainwindow.cpp", "MU", null ]
+		[ "/home/sung/ws/git/git_test/mainwindow.cpp", "MU", null ],
+		[ "/home/sung/ws/git/git_test/mythread.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

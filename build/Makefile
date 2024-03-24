@@ -238,6 +238,30 @@ myproject_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/myproject_autogen/mocs_compilation.cpp.s
 .PHONY : myproject_autogen/mocs_compilation.cpp.s
 
+mythread.o: mythread.cpp.o
+.PHONY : mythread.o
+
+# target to build an object file
+mythread.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/mythread.cpp.o
+.PHONY : mythread.cpp.o
+
+mythread.i: mythread.cpp.i
+.PHONY : mythread.i
+
+# target to preprocess a source file
+mythread.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/mythread.cpp.i
+.PHONY : mythread.cpp.i
+
+mythread.s: mythread.cpp.s
+.PHONY : mythread.s
+
+# target to generate assembly for a file
+mythread.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/myproject.dir/build.make CMakeFiles/myproject.dir/mythread.cpp.s
+.PHONY : mythread.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -260,6 +284,9 @@ help:
 	@echo "... myproject_autogen/mocs_compilation.o"
 	@echo "... myproject_autogen/mocs_compilation.i"
 	@echo "... myproject_autogen/mocs_compilation.s"
+	@echo "... mythread.o"
+	@echo "... mythread.i"
+	@echo "... mythread.s"
 .PHONY : help
 
 

@@ -22,6 +22,7 @@ add_executable(
     mainwindow.cpp 
     mainwindow.h 
     form/mainwindow.ui
+    mythread.cpp
     ) #
 
 

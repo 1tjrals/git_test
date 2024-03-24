@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[6];
-    char stringdata0[72];
+    QByteArrayData data[9];
+    char stringdata0[115];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -33,15 +33,19 @@ struct qt_meta_stringdata_MainWindow_t {
 static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
 QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
-QT_MOC_LITERAL(1, 11, 15), // "init_stylesheet"
-QT_MOC_LITERAL(2, 27, 0), // ""
-QT_MOC_LITERAL(3, 28, 15), // "init_mainwindow"
-QT_MOC_LITERAL(4, 44, 13), // "button1_click"
-QT_MOC_LITERAL(5, 58, 13) // "button2_click"
+QT_MOC_LITERAL(1, 11, 14), // "onValueChanged"
+QT_MOC_LITERAL(2, 26, 0), // ""
+QT_MOC_LITERAL(3, 27, 15), // "init_stylesheet"
+QT_MOC_LITERAL(4, 43, 15), // "init_mainwindow"
+QT_MOC_LITERAL(5, 59, 13), // "button1_click"
+QT_MOC_LITERAL(6, 73, 13), // "button2_click"
+QT_MOC_LITERAL(7, 87, 13), // "button3_click"
+QT_MOC_LITERAL(8, 101, 13) // "button4_click"
 
     },
-    "MainWindow\0init_stylesheet\0\0init_mainwindow\0"
-    "button1_click\0button2_click"
+    "MainWindow\0onValueChanged\0\0init_stylesheet\0"
+    "init_mainwindow\0button1_click\0"
+    "button2_click\0button3_click\0button4_click"
 };
 #undef QT_MOC_LITERAL
 
@@ -51,7 +55,7 @@ static const uint qt_meta_data_MainWindow[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       4,   14, // methods
+       7,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -59,12 +63,18 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   34,    2, 0x08 /* Private */,
-       3,    0,   35,    2, 0x08 /* Private */,
-       4,    0,   36,    2, 0x08 /* Private */,
-       5,    0,   37,    2, 0x08 /* Private */,
+       1,    1,   49,    2, 0x0a /* Public */,
+       3,    0,   52,    2, 0x08 /* Private */,
+       4,    0,   53,    2, 0x08 /* Private */,
+       5,    0,   54,    2, 0x08 /* Private */,
+       6,    0,   55,    2, 0x08 /* Private */,
+       7,    0,   56,    2, 0x08 /* Private */,
+       8,    0,   57,    2, 0x08 /* Private */,
 
  // slots: parameters
+    QMetaType::Void, QMetaType::Int,    2,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -79,14 +89,16 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<MainWindow *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->init_stylesheet(); break;
-        case 1: _t->init_mainwindow(); break;
-        case 2: _t->button1_click(); break;
-        case 3: _t->button2_click(); break;
+        case 0: _t->onValueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 1: _t->init_stylesheet(); break;
+        case 2: _t->init_mainwindow(); break;
+        case 3: _t->button1_click(); break;
+        case 4: _t->button2_click(); break;
+        case 5: _t->button3_click(); break;
+        case 6: _t->button4_click(); break;
         default: ;
         }
     }
-    (void)_a;
 }
 
 QT_INIT_METAOBJECT const QMetaObject MainWindow::staticMetaObject = { {
@@ -118,13 +130,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 4)
+        if (_id < 7)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 4;
+        _id -= 7;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 4)
+        if (_id < 7)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 4;
+        _id -= 7;
     }
     return _id;
 }

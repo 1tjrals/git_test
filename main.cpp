@@ -1,8 +1,5 @@
 
 #include <QApplication>
-#include <iostream>
-
-#include "Adder.h"
 #include "mainwindow.h"
 
 
@@ -16,12 +13,10 @@ int main(int argc, char *argv[])
     C_Calculator calc;
     calc.Run();
 
+    //GUI
     QApplication a(argc, argv);
     MainWindow w;
     w.show();
     return a.exec();
-
-
-
 
 }

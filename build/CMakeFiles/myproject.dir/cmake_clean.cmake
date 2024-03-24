@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/myproject.dir/mainwindow.cpp.o.d"
   "CMakeFiles/myproject.dir/myproject_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/myproject.dir/myproject_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/myproject.dir/mythread.cpp.o"
+  "CMakeFiles/myproject.dir/mythread.cpp.o.d"
   "myproject"
   "myproject.pdb"
 )

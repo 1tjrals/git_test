@@ -1,11 +1,9 @@
 #include "mainwindow.h"
-#include "default_params.h"
 #include "form/ui_mainwindow.h"
 
 
-#include <iostream>
-#include "Adder.h"
 using namespace std;
+
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -14,6 +12,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     init_stylesheet();
     init_mainwindow();
+
+
 }
 
 MainWindow::~MainWindow()
@@ -34,6 +34,14 @@ void MainWindow::init_mainwindow(){
     //button
     connect(ui->pushButton_1,&QPushButton::clicked,this,&MainWindow::button1_click);
     connect(ui->pushButton_2,&QPushButton::clicked,this,&MainWindow::button2_click);
+    connect(ui->pushButton_3,&QPushButton::clicked,this,&MainWindow::button3_click);
+    connect(ui->pushButton_4,&QPushButton::clicked,this,&MainWindow::button4_click);
+    // connect(ui->pushButton_5,&QPushButton::clicked,this,&MainWindow::button5_click);
+
+    mThread = new MyThread(this);
+    connect(mThread, SIGNAL(valueChanged(int)),this, SLOT(onValueChanged(int)));
+
+
 }
 
 void MainWindow::button1_click(){
@@ -43,9 +51,27 @@ void MainWindow::button1_click(){
     cout << adder.Process() << endl;
     double cc =adder.Process();
     ui->textEdit_3->setText(QString::number(cc));
+    system("bash ~/ws/git/git_test/script/csv.sh");
+
 }   
 
 void MainWindow::button2_click(){
     // QString bb = ui->comboBox_1->currentText();
     ui->label_1->setText("aa : "+ui->comboBox_1->currentText());
 }
+
+void MainWindow::onValueChanged(int count){
+    ui->label_2->setText(QString::number(count));
+    // cout << count << endl;
+}
+
+// Start button
+void MainWindow::button3_click(){
+    mThread->start();
+}
+// Stop button
+void MainWindow::button4_click(){
+    mThread->Stop = true;
+}
+
+
